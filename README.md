@@ -1,3 +1,3 @@
 # hello-world
-My first repository on GitHub
-I love 🎮, 🌮, and 🏈
+- "To Improve is to change"
+- "There is nothing permanent, except change"
