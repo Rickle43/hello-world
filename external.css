@@ -1,0 +1,182 @@
+/* Reset default browser styles */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/* Set up grid for gallery */
+.gallery {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-auto-rows: minmax(100px, auto);
+	gap: 10px;
+	margin: 50px auto;
+	max-width: 1200px;
+}
+
+.item {
+	position: relative;
+	overflow: hidden;
+}
+
+.item img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 0.3s ease-in-out;
+}
+
+.item:hover img {
+	transform: scale(1.1);
+}
+
+.item::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.4);
+	opacity: 0;
+	transition: opacity 0.3s ease-in-out;
+}
+
+.item:hover::before {
+	opacity: 1;
+}
+
+.item::after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 2rem;
+	color: #fff;
+	text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+	z-index: 1;
+}
+
+.item1::after {
+	content: "1";
+}
+
+.item2::after {
+	content: "2";
+}
+
+.item3::after {
+	content: "3";
+}
+
+.item4::after {
+	content: "4";
+}
+
+.item5::after {
+	content: "5";
+}
+
+.item6::after {
+	content: "6";
+}
+
+.item7::after {
+	content: "7";
+}
+
+.item8::after {
+	content: "8";
+}
+
+.item9::after {
+	content: "9";
+}
+
+/* Style virtual room section */
+.virtual-room {
+	background-color: #f8f8f8;
+	padding: 50px;
+	text-align: center;
+}
+
+.virtual-room h2 {
+	margin-bottom: 20px;
+}
+
+.virtual-room a {
+	display: inline-block;
+	background-color: #0d6efd;
+	color: #fff;
+	padding: 10px 20px;
+	border-radius: 5px;
+	text-decoration: none;
+}
+
+.virtual-room a:hover {
+	background-color: #0c63e6;
+}
+
+/* Style form section */
+.form {
+	background-color: #eee;
+	padding: 50px;
+	text-align: center;
+}
+
+.form h2 {
+	margin-bottom: 20px;
+}
+
+.form label {
+	display: block;
+	margin-bottom: 10px;
+}
+
+.form input[type="text"],
+.form input[type="email"] {
+	display: block;
+	margin-bottom: 20px;
+	padding: 10px;
+	border-radius: 5px;
+	border: none;
+	width: 100%;
+}
+
+.form input[type="submit"] {
+	display: inline-block;
+	background-color: #0d6efd;
+	color: #fff;
+	padding: 10px 20px;
+	border-radius: 5px;
+	border: none;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.form input[type="submit"]:hover {
+	background-color: #0c63e6;
+}
+
+/* Set up header */
+header {
+	background-color: #0d6efd;
+	color: #fff;
+	padding: 20px;
+	position: sticky;
+	top: 0;
+	z-index: 100;
+}
+
+header h1 {
+	margin: 0;
+	font-size: 2rem;
+}
+
+nav ul {
+	list-style
+
+   
